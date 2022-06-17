@@ -30,7 +30,7 @@ public class PoemText {
 	        }
 	        Set<Map.Entry<String, Integer>> entryset = Hashmaputil.entrySet(); /* Lists set entry. */
 	        
-	        List<Map.Entry<String, Integer>> sortedArrayList = new ArrayList<Map.Entry<String, Integer>>(entryset);
+	        ArrayList<Map.Entry<String, Integer>> sortedArrayList = new ArrayList<Map.Entry<String, Integer>>(entryset);
 	        
 	        Collections.sort( sortedArrayList, new Comparator<Map.Entry<String, Integer>>() {
 	           /* Sorts Comparator as collection. */
@@ -47,4 +47,4 @@ public class PoemText {
 	        		for(Map.Entry<String, Integer> i:sortedArrayList){
 	        			System.out.println(i.getKey()+" -> "+i.getValue() );
 	        }
-	}	}
+	} }
